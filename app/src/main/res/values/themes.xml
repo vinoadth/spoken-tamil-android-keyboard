@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StandardSpokenTamilKeyboard" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/app_primary</item>
+        <item name="colorOnPrimary">@color/app_on_primary</item>
+        <item name="colorPrimaryContainer">@color/app_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/app_on_primary_container</item>
+        <item name="colorSecondary">@color/app_primary</item>
+        <item name="colorOnSecondary">@color/app_on_primary</item>
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="colorOnBackground">@color/app_on_background</item>
+        <item name="colorSurface">@color/app_background</item>
+        <item name="colorOnSurface">@color/app_on_background</item>
+    </style>
+
+    <style name="Theme.StandardSpokenTamilKeyboard" parent="Base.Theme.StandardSpokenTamilKeyboard" />
+</resources>

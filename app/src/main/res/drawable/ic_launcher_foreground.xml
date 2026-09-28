@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The word "tam" drawn as strokes, kept inside the adaptive-icon safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="58"
+        android:pivotY="51"
+        android:scaleX="0.72"
+        android:scaleY="0.72"
+        android:translateX="-4"
+        android:translateY="3">
+        <!-- t -->
+        <path
+            android:pathData="M27,37 V58 Q27,64 33,64 M21,46 H34"
+            android:strokeWidth="6"
+            android:strokeColor="@color/brown_cream"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <!-- a -->
+        <path
+            android:pathData="M59,55 A8.5,9 0 1,1 42,55 A8.5,9 0 1,1 59,55 M59,46 V64"
+            android:strokeWidth="6"
+            android:strokeColor="@color/brown_cream"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <!-- m -->
+        <path
+            android:pathData="M68,46 V64 M68,53 Q68,46 74.5,46 Q81,46 81,53 V64 M81,53 Q81,46 87.5,46 Q94,46 94,53 V64"
+            android:strokeWidth="6"
+            android:strokeColor="@color/brown_cream"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

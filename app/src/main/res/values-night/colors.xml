@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_primary">@color/brown_primary_light</color>
+    <color name="app_on_primary">#FF3E2723</color>
+    <color name="app_primary_container">#FF5D4037</color>
+    <color name="app_on_primary_container">#FFF1DCC8</color>
+    <color name="app_background">#FF1C1512</color>
+    <color name="app_on_background">#FFEFE3DA</color>
+
+    <color name="kb_background">#FF211A16</color>
+    <color name="kb_key">#FF3E302A</color>
+    <color name="kb_key_pressed">#FF5D4A40</color>
+    <color name="kb_key_modifier">#FF2E231E</color>
+    <color name="kb_key_accent">#FF8D5A3B</color>
+    <color name="kb_key_text">#FFF3E9E1</color>
+    <color name="kb_key_hint">#FFBCA79A</color>
+    <color name="kb_popup">#FF4E3D35</color>
+    <color name="kb_suggestion_divider">#FF4A3B33</color>
+</resources>

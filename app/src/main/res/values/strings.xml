@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Standard Spoken Tamil Keyboard</string>
+    <string name="ime_name">Tamil (Standard Spoken Tamil)</string>
+    <string name="subtype_label">Tamil (Standard Spoken Tamil)</string>
+    <string name="kb_letters">abc</string>
+    <string name="kb_space_tamil">Tamil SST</string>
+    <string name="kb_action_go">Go</string>
+    <string name="kb_action_search">Search</string>
+    <string name="kb_action_send">Send</string>
+    <string name="kb_action_next">Next</string>
+    <string name="kb_action_done">Done</string>
+    <string name="kb_action_previous">Prev</string>
+
+    <string name="setup_title">Standard Spoken Tamil Keyboard</string>
+    <string name="setup_instructions">1. Enable the keyboard in system settings.\n2. Select it as your current keyboard.\n\nOn the keyboard, long-press a key to type its other characters, such as plain ASCII letters. Tap 🌐 to return to your previous keyboard, or long-press it to choose another keyboard.</string>
+    <string name="setup_enable">Enable keyboard</string>
+    <string name="setup_select">Select keyboard</string>
+    <string name="setup_test_hint">Try typing here</string>
+</resources>

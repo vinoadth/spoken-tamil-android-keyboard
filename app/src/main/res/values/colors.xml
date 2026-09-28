@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="brown_primary">#FF795548</color>
+    <color name="brown_primary_light">#FFD7B899</color>
+    <color name="brown_cream">#FFFFF3E0</color>
+
+    <color name="app_primary">#FF5D4037</color>
+    <color name="app_on_primary">@color/white</color>
+    <color name="app_primary_container">#FFF1DCC8</color>
+    <color name="app_on_primary_container">#FF3E2723</color>
+    <color name="app_background">#FFFBF6F1</color>
+    <color name="app_on_background">#FF2B1F1A</color>
+
+    <color name="kb_background">#FFEADFD4</color>
+    <color name="kb_key">#FFFFFBF7</color>
+    <color name="kb_key_pressed">#FFD2BFAE</color>
+    <color name="kb_key_modifier">#FFD9C8B8</color>
+    <color name="kb_key_accent">#FFC9A27E</color>
+    <color name="kb_key_text">#FF3E2723</color>
+    <color name="kb_key_hint">#FF8D6E63</color>
+    <color name="kb_popup">#FFF7EEE6</color>
+    <color name="kb_suggestion_divider">#FFC4B2A3</color>
+</resources>
