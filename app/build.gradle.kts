@@ -27,7 +27,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.standardspokentamil"
+        applicationId = "com.standardspokentamil.spokentamilkeyboard"
         minSdk = 26
         targetSdk = 37
         versionCode = appVersionCode
