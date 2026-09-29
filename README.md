@@ -54,6 +54,31 @@ Android 8.0 (API 26) and later.
 
 The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
+## Building the word list
+
+Suggestions come from `app/src/main/assets/dictionary.tsv`, one `word<TAB>frequency`
+per line. `dictionary-builder/build_dictionary.py` (Python 3, no dependencies) builds
+this list from raw Spoken Tamil text:
+
+```bash
+python3 dictionary-builder/build_dictionary.py corpus.txt                 # writes sample-dictionary.tsv
+python3 dictionary-builder/build_dictionary.py a.txt b.txt --min-count 2  # several files, drop rare words
+python3 dictionary-builder/build_dictionary.py corpus.txt --prod=true     # writes the app's dictionary.tsv
+```
+
+- Only words made entirely of letters on this keyboard are kept. Tamil-script words,
+  emoji, digits, punctuation, URLs, e-mail addresses and @mentions are dropped.
+- Frequency is the number of times a word occurs across all input files. Each word
+  is written once; the keyboard ranks suggestions by frequency, so the file is not sorted.
+- Words are lowercased by default. With `--keep-case`, spellings that differ only in
+  case are merged into the most frequent one.
+- `--min-length` (default 2) drops shorter words; `--min-count` (default 1) drops rarer ones.
+
+By default the output is a draft, `sample-dictionary.tsv` in the project root
+(git-ignored), which `./gradlew testDebugUnitTest` validates when present.
+Pass `--prod=true` (or just `--prod`) to overwrite `app/src/main/assets/dictionary.tsv`
+directly so the next build ships the new words; `-o FILE` writes anywhere else.
+
 ## License
 
 [MIT](LICENSE) © 2026 Vinoth G <vinoth@mail.ru>

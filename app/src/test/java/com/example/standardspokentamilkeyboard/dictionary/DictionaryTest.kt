@@ -50,9 +50,9 @@ class DictionaryTest {
 
     @Test
     fun findsWordsTypedWithoutShiftOrLongPress() {
-        val dict = dictionary("\u0163a\u0146i" to 1)
-        assertEquals(listOf("\u0163a\u0146i"), dict.suggest("ta\u01F9"))
-        assertEquals(listOf("\u0163a\u0146i"), dict.suggest("\u0163a"))
+        val dict = dictionary("\u00E1\u1E11\u00F9" to 1)
+        assertEquals(listOf("\u00E1\u1E11\u00F9"), dict.suggest("ad"))
+        assertEquals(listOf("\u00E1\u1E11\u00F9"), dict.suggest("\u00E1d"))
     }
 
     @Test
@@ -69,9 +69,9 @@ class DictionaryTest {
 
     @Test
     fun wordsMatchingTheTypedLettersExactlyRankAboveShiftVariants() {
-        val dict = dictionary("tani" to 1, "\u0163ani" to 100)
-        assertEquals(listOf("\u0163ani", "tani"), dict.suggest("\u0163a"))
-        assertEquals(listOf("tani", "\u0163ani"), dict.suggest("ta"))
+        val dict = dictionary("ad\u00F9" to 1, "\u00E1\u1E11\u00F9" to 100)
+        assertEquals(listOf("\u00E1\u1E11\u00F9", "ad\u00F9"), dict.suggest("\u00E1\u1E11"))
+        assertEquals(listOf("ad\u00F9", "\u00E1\u1E11\u00F9"), dict.suggest("ad"))
     }
 
     @Test

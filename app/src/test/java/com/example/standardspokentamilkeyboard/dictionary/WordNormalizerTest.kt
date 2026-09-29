@@ -16,7 +16,7 @@ class WordNormalizerTest {
 
     @Test
     fun keyFoldsShiftLevelToUnshiftedCharacter() {
-        assertEquals("ta\u01F9i", WordNormalizer.key("\u0163a\u0146i"))
+        assertEquals("ad\u00F9", WordNormalizer.key("\u00E1\u1E11\u00F9"))
     }
 
     @Test

@@ -19,7 +19,7 @@ object WordNormalizer {
 
     /**
      * The lookup key of a word: what typing the same keys without Shift or long-press produces.
-     * "ţaņi" and "taǹi" share a key, so a suggestion is found even when Shift was skipped.
+     * "adù" and "áḑù" share a key, so a suggestion is found even when Shift was skipped.
      */
     fun key(word: String): String = buildString {
         canonical(word).codePoints().forEach { cp ->
