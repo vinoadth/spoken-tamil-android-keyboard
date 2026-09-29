@@ -14,3 +14,8 @@
 .cxx
 local.properties
 /sample-dictionary.tsv
+/dist
+/keystore.properties
+*.jks
+*.keystore
+/version.properties.bak

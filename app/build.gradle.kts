@@ -1,21 +1,50 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
 }
 
+fun loadProperties(name: String): Properties = Properties().apply {
+    val file = rootProject.file(name)
+    if (file.exists()) file.inputStream().use { load(it) }
+}
+
+val versionProps = loadProperties("version.properties")
+val appVersionCode = versionProps.getProperty("VERSION_CODE").toInt()
+val appVersionName = versionProps.getProperty("VERSION_NAME")
+
+// Signing secrets live in the git-ignored keystore.properties; without it release builds are unsigned.
+val keystoreProps = loadProperties("keystore.properties")
+
+base {
+    archivesName = "spoken-tamil-keyboard-$appVersionName"
+}
+
 android {
-    namespace = "com.example.standardspokentamilkeyboard"
+    namespace = "com.standardspokentamil"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.standardspokentamilkeyboard"
+        applicationId = "com.standardspokentamil"
         minSdk = 26
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = appVersionCode
+        versionName = appVersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    if (!keystoreProps.isEmpty) {
+        signingConfigs {
+            create("release") {
+                storeFile = rootProject.file(keystoreProps.getProperty("storeFile"))
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
@@ -23,6 +52,7 @@ android {
             enableUnitTestCoverage = true
         }
         release {
+            signingConfigs.findByName("release")?.let { signingConfig = it }
             optimization {
                 enable = false
             }
