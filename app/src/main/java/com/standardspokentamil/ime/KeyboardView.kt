@@ -179,7 +179,11 @@ class KeyboardView(context: Context, private val listener: Listener) : View(cont
 
     init {
         ViewCompat.setOnApplyWindowInsetsListener(this) { v, insets ->
-            val bars = insets.getInsets(WindowInsetsCompat.Type.navigationBars())
+            // With gesture navigation, navigationBars only covers the gesture handle; the taller
+            // IME button bar (hide keyboard / switch keyboard) is reported as tappableElement.
+            val bars = insets.getInsets(
+                WindowInsetsCompat.Type.navigationBars() or WindowInsetsCompat.Type.tappableElement(),
+            )
             if (v.paddingBottom != bars.bottom) {
                 v.setPadding(0, 0, 0, bars.bottom)
                 v.requestLayout()
