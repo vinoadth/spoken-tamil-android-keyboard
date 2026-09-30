@@ -231,6 +231,9 @@ class PronunciationActivity : AppCompatActivity() {
 
         // Tamil Latin, IPA, meaning, and optional notes. Add rows here to populate the
         // examples table; the 4th (notes) entry is optional per row.
-        val EXAMPLES = listOf<Array<String>>()
+        val EXAMPLES = listOf(
+            arrayOf("adù", "ad̪ɯ̆", "that", "\u0b85\u0ba4\u0bc1"),
+            arrayOf("áḑù", "aːɖɯ̆", "goat", "\u0b86\u0b9f\u0bc1"),
+        )
     }
 }
