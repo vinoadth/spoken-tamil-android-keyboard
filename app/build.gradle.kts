@@ -54,7 +54,9 @@ android {
         release {
             signingConfigs.findByName("release")?.let { signingConfig = it }
             optimization {
-                enable = false
+                // Enables R8: code shrinking, optimization, obfuscation, and resource
+                // shrinking. Default Android keep rules are included automatically.
+                enable = true
             }
         }
     }
