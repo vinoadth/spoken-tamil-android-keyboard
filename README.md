@@ -181,6 +181,11 @@ By default the output is a draft, `sample-dictionary.tsv` in the project root
 Pass `--prod=true` (or just `--prod`) to overwrite `app/src/main/assets/dictionary.tsv`
 directly so the next build ships the new words; `-o FILE` writes anywhere else.
 
+## Privacy
+
+The keyboard works entirely offline and collects no data. See the
+[Privacy Policy](PRIVACY_POLICY.md).
+
 ## License
 
 [MIT](LICENSE) © 2026 Vinoth G <vinoth@mail.ru>
