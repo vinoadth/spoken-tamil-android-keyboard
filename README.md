@@ -35,6 +35,108 @@ romanization. The layout is a port of the X11 `in(tam_sst)` keyboard layout.
 - **?123**: numbers and symbols.
 - **⌫ Backspace**: hold to delete repeatedly.
 
+## Pronunciation
+
+The keyboard writes Tamil in a Latin alphabet with diacritics, where each letter
+maps to a single Standard Spoken Tamil sound. The tables below give the
+[IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) value of every
+letter. Long-press a key to reach its diacritic forms.
+
+### Vowels
+
+| Letter | IPA | Sound |
+| :----: | :-: | ----- |
+| a | `a`  | short open vowel |
+| á | `aː` | long open vowel |
+| i | `i`  | short close front vowel |
+| í | `iː` | long close front vowel |
+| u | `u`  | short close back rounded vowel |
+| ú | `uː` | long close back rounded vowel |
+| e | `e̞`  | short mid front vowel |
+| é | `e̞ː` | long mid front vowel |
+| o | `o̞`  | short mid back rounded vowel |
+| ó | `o̞ː` | long mid back rounded vowel |
+| à | `æ̆`  | ultra-short near-open front vowel |
+| æ | `æː` | long near-open front vowel |
+| ì | `y̆`  | ultra-short close front rounded vowel |
+| ù | `ɯ̆`  | ultra-short close back unrounded vowel |
+
+### Consonants
+
+| Letter | IPA | Sound |
+| :----: | :-: | ----- |
+| k | `k`   | voiceless velar stop |
+| g | `ɡ`   | voiced velar stop |
+| ĉ | `t̠ʃ`  | voiceless post-alveolar affricate |
+| j | `d̠ʒ`  | voiced post-alveolar affricate |
+| ţ | `ʈ`   | voiceless retroflex stop |
+| ḑ | `ɖ`   | voiced retroflex stop |
+| t | `t̪`   | voiceless dental stop |
+| d | `d̪`   | voiced dental stop |
+| p | `p`   | voiceless bilabial stop |
+| b | `b`   | voiced bilabial stop |
+| m | `m`   | bilabial nasal |
+| ǹ | `n̪`   | dental nasal |
+| n | `n`   | alveolar nasal |
+| ņ | `ɳ`   | retroflex nasal |
+| ñ | `ɲ`   | palatal nasal |
+| ň | `ŋ`   | velar nasal |
+| f | `f`   | voiceless labiodental fricative |
+| ğ | `v`   | voiced labiodental fricative |
+| s | `s`   | voiceless alveolar fricative |
+| z | `z`   | voiced alveolar fricative |
+| ş | `ʂ`   | voiceless retroflex fricative |
+| h | `h`   | voiceless glottal fricative |
+| v | `w`   | labial–velar approximant |
+| y | `j`   | palatal approximant |
+| r | `ɾ`   | alveolar tap |
+| ŗ | `r`   | alveolar trill |
+| l | `l`   | alveolar lateral approximant |
+| ļ | `ɭ`   | retroflex lateral approximant |
+| ǯ | `ɻ`   | retroflex approximant |
+
+### Nasal vowels
+
+Spoken Tamil often nasalises a vowel instead of pronouncing a full nasal
+consonant. Two spellings trigger this, and in both the nasalisation shows up in
+IPA as a tilde over the vowel (◌̃):
+
+1. **Vowel + `ŋ`** — a `ŋ` written after a vowel is not a separate consonant. It
+   nasalises the vowel before it while keeping that vowel's quality and length:
+
+   | Spelling | IPA | | Spelling | IPA |
+   | :------: | :-: | - | :------: | :-: |
+   | aŋ | `ã`  | | óŋ | `õ̞ː` |
+   | áŋ | `ãː` | | uŋ | `ũ`  |
+   | eŋ | `ẽ̞`  | | | |
+   | éŋ | `ẽ̞ː` | | | |
+   | oŋ | `õ̞`  | | | |
+
+2. **Vowel + `ň` + `g`** — on its own `ň` is the velar nasal `ŋ`. But when it
+   stands between a vowel and `g`, the vowel is nasalised and a full `ɡ` still
+   follows:
+
+   | Spelling | IPA | | Spelling | IPA |
+   | :------: | :--: | - | :------: | :--: |
+   | aňg | `ãɡ`  | | óňg | `õ̞ːɡ` |
+   | áňg | `ãːɡ` | | uňg | `ũɡ`  |
+   | eňg | `ẽ̞ɡ`  | | | |
+   | éňg | `ẽ̞ːɡ` | | | |
+   | oňg | `õ̞ɡ`  | | | |
+
+For example, **avaŋ** is `/awã/`, **póňgà** is `/põ̞ːɡæ̆/`, and **varùváŋ** is
+`/waɾɯ̆wãː/`.
+
+### Examples
+
+<!-- Add worked examples below; keep the table format and fill in the rows. -->
+
+| Tamil Latin | IPA | Meaning | Notes |
+| ----------- | --- | ------- | ----- |
+|             |     |         |       |
+|             |     |         |       |
+|             |     |         |       |
+
 ## Setup
 
 1. Install the app and open **Standard Spoken Tamil Keyboard**.

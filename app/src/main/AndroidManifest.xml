@@ -22,6 +22,12 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".PronunciationActivity"
+            android:exported="false"
+            android:label="@string/pron_title"
+            android:parentActivityName=".MainActivity" />
+
         <service
             android:name=".ime.TamSstImeService"
             android:exported="true"

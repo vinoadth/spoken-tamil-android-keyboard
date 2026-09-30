@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.select_button).setOnClickListener {
             getSystemService(InputMethodManager::class.java).showInputMethodPicker()
         }
+        findViewById<Button>(R.id.pron_button).setOnClickListener {
+            startActivity(Intent(this, PronunciationActivity::class.java))
+        }
     }
 
     /** Replaces the colour emoji 🌐 with the keyboard's globe icon, tinted to match the text. */

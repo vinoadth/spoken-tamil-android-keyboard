@@ -16,4 +16,19 @@
     <string name="setup_enable">Enable keyboard</string>
     <string name="setup_select">Select keyboard</string>
     <string name="setup_test_hint">Try typing here</string>
+
+    <string name="pron_title">Pronunciation</string>
+    <string name="pron_summary">The keyboard writes Tamil in a Latin alphabet with diacritics, where each letter maps to a single Standard Spoken Tamil sound. Open the guide for the IPA value of every letter.</string>
+    <string name="pron_open_guide">Pronunciation guide</string>
+    <string name="pron_intro">The keyboard writes Tamil in a Latin alphabet with diacritics, where each letter maps to a single Standard Spoken Tamil sound. The tables below give the IPA value of every letter. Long-press a key to reach its diacritic forms.</string>
+    <string name="pron_vowels_title">Vowels</string>
+    <string name="pron_consonants_title">Consonants</string>
+    <string name="pron_nasal_title">Nasal vowels</string>
+    <string name="pron_nasal_body">Spoken Tamil often nasalises a vowel instead of pronouncing a full nasal consonant. Two spellings trigger this, and in both the nasalisation shows up in IPA as a tilde over the vowel (◌̃).</string>
+    <string name="pron_nasal_rule1">1. Vowel + ŋ — a ŋ written after a vowel is not a separate consonant. It nasalises the vowel before it while keeping that vowel\'s quality and length:</string>
+    <string name="pron_nasal_rule2">2. Vowel + ň + g — on its own ň is the velar nasal ŋ. But when it stands between a vowel and g, the vowel is nasalised and a full ɡ still follows:</string>
+    <string name="pron_nasal_examples">For example, avaŋ is /awã/, póňgà is /põ̞ːɡæ̆/, and varùváŋ is /waɾɯ̆wãː/.</string>
+    <string name="pron_examples_title">Examples</string>
+    <!-- Fill in worked examples here; the surrounding styling stays as-is. -->
+    <string name="pron_examples_body">Examples coming soon.</string>
 </resources>
